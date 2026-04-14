@@ -1,4 +1,4 @@
-use dycall::import;
+use rust_dylib::import;
 
 #[import("my_lib.dll")]
 extern "C" {
