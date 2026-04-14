@@ -21,3 +21,9 @@ extern "C" {
     fn add(a: i32, b: i32) -> i32;
 }
 ```
+
+3. Call the imported function just like any other Rust function.
+
+```rust
+let result = add(10, 20);
+```
