@@ -2,6 +2,15 @@
 name = "rust_dylib"
 version = "0.1.0"
 edition = "2021"
+authors = ["kyoybs <675885711>"]  # 作者信息（可多个）
+description = "A Rust library for dynamic library (dylib) handling"  # 必填，简短不超过 100 字符
+license = "MIT"             # 开源许可证（如 MIT/Apache-2.0，必须是有效 SPDX 标识符）
+repository = "https://github.com/kyoybs/rust_dylib"  # 仓库地址（必填，指向你的 GitHub 仓库）
+homepage = "https://github.com/kyoybs/rust_dylib"    # 可选，通常和 repository 一致
+documentation = "https://docs.rs/rust_dylib"        # 可选，发布后 docs.rs 会自动生成文档
+readme = "README.md"        # 可选（推荐），指定 README 文件路径
+keywords = ["dylib", "dynamic-library", "rust"]     # 可选（推荐），便于搜索
+categories = ["api-bindings", "filesystem"]         # 可选（推荐），分类需符合 crates.io 规范
 
 [lib]
 proc-macro = true  # 必须开启过程宏
