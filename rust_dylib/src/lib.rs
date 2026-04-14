@@ -2,8 +2,8 @@ use proc_macro::TokenStream;
 use quote::quote;
 use syn::{parse_macro_input, ItemForeignMod, LitStr};
 
-/// 动态链接库调用宏：#[dycall("库路径")]
-/// 用法：#[dycall("my_lib.dll")] extern "C" { fn add(...) -> ...; }
+/// 动态链接库调用宏, 类似c# pinvoke
+/// 用法：#[import("my_lib.dll")] extern "C" { fn add(...) -> ...; }
 #[proc_macro_attribute]
 pub fn import(args: TokenStream, input: TokenStream) -> TokenStream {
     // 1. 解析库路径参数（如 "my_lib.dll"）

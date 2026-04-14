@@ -58,12 +58,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "rust_dylib"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23541ba35370768817bf217b80dd828d4ce3d91e2f4ccc69fbdaf7f7d5a0c94d"
+dependencies = [
+ "libloading",
+ "once_cell",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "rust_dylib_demo"
 version = "0.1.0"
 dependencies = [
  "libloading",
  "once_cell",
- "rust_dylib",
+ "rust_dylib 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
